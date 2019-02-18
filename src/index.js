@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import AddSubscriber from './AddSubscriber';
+
 import * as serviceWorker from './serviceWorker';
-import ShowSubscribers from './ShowSubscribers.js'
+
 import './common/common.css';
 import PhoneDirectory from './PhoneDirectory';
 ReactDOM.render(<PhoneDirectory/>, document.getElementById('root'));
