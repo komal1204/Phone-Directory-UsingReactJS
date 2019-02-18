@@ -29,7 +29,7 @@ class App extends Component {
       // <input id = "name" type="text" placeholder="type Here" defaultValue="Komal"></input> */}
       // </div>
       <div>
-        <Header></Header>
+        <Header heading = "Phone Directory"></Header>
         <div className="component-body-container">
           <button className="custom-btn add-btn">Add</button>
           <div className="grid-container heading-container">
