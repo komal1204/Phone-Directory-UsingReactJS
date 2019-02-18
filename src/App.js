@@ -5,32 +5,15 @@ class App extends Component {
   clickHandler(message){
     alert(message);
   }
-  render() {
-    //let x=10;
-    let subscribers = [
-      {
-        id: 1,
-        name: "Shilpa Bhat",
-        phone: "8888888888"
-      },
-      {
-        id: 2,
-        name: "Srishti Gupta",
-        phone: "9999999999"
+  
+    constructor(){
+      super();
+      this.state = {
+        subscribersListToShow:[]
       }
-    ];
+    }
+    render() {
     return (
-      // <div>
-      //     <Header></Header>
-      // <button>Add</button>
-      // <div>
-      //   <span>Name</span><br/>
-      //   <span>Phone</span>
-      //  {/* <span>{x*2}</span> */}
-      // </div>
-      // {/* <label htmlFor="name">Name</label>
-      // <input id = "name" type="text" placeholder="type Here" defaultValue="Komal"></input> */}
-      // </div>
       <div>
         <Header heading = "Phone Directory"></Header>
         <div className="component-body-container">
@@ -41,7 +24,7 @@ class App extends Component {
           </div>
           
           {
-            subscribers.map(sub => {
+              this.state.subscribersListToShow.map(sub =>{
               return <div key={sub.id} className="grid-container">
                 <span className="grid-item">{sub.name}</span>
                 <span className="grid-item">{sub.phone}</span>
